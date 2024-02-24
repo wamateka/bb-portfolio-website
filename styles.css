@@ -779,6 +779,7 @@ section {
   text-align: center;
   align-items: center;
   border-radius: 0.6rem;
+  overflow: hidden;
   box-shadow: 0.36rem 0.36rem 0.18rem rgba(0, 0, 0, 0.425);
   transition: background 500ms, box-shadow 500ms;
 }
@@ -790,16 +791,23 @@ section {
   transition: opacity 500ms, transform 500ms;
   object-fit: cover;
 }
+.content-Box span{
+  position: absolute;
+  width: 100%;
+  height: 0;
+  background: linear-gradient(to top,#801336,#ee4540,rgba(255, 255, 255, 0.3));
+  transition: height 0.5s;
 
+}
 .content-Box h4 {
   position: absolute;
-  top: 15%;
+  top: 40%;
   transition: top 500ms;
 }
 
 .content-Box p {
   position: absolute;
-  top: -50%;
+  top: 100%;
   padding: 0 5vw;
   visibility: hidden;
   transition: top 500ms;
@@ -810,7 +818,7 @@ section {
   flex-direction: row;
   gap: 0.54rem;
   position: absolute;
-  top: 67.2%;
+  bottom: -20%;
   transition: top 500ms;
 }
 
@@ -829,7 +837,7 @@ section {
   border-radius: 0.54rem;
   transition: background 400ms linear;
 }
-/*
+
 .content-Box:hover {
   background-color: rgb(0, 0, 0);
   box-shadow: 0.36rem 0.36rem 0.18rem rgba(0, 0, 0, 0.425);
@@ -841,22 +849,25 @@ section {
 }
 
 .content-Box:hover h4 {
-  top: 101%;
+  top: 10%;
 }
 
 .content-Box:hover p {
   visibility: visible;
-  top: 20%;
+  top: 30%;
 }
 
 .content-Box:hover div {
-  top: 75.5%;
+  bottom: 5%;
 }
 
 .content-Box div a:hover {
   background-position: right;
 }
-*/
+.content-Box:hover span{
+  height: 100%;
+ 
+}
 @media screen and (max-width: 600px) {
   .code-Content {
     grid-template-columns: 1fr;
