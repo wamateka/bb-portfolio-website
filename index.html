@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Portfolio Website</title>
+  </head>
+  <body>
+    <div class="pseudo-Nav"><a href="index.html">Barry Barnes</a></div>
+
+    <nav>
+      <div>
+        <ul>
+          <li>
+            <a href="#intro"><i class="fa-solid fa-house" title="Intro"></i></a>
+          </li>
+          <li>
+            <a href="#code"><i class="fa-solid fa-code" title="Code"></i></a>
+          </li>
+          <li>
+            <a href="#activities"
+              ><i class="fa-solid fa-atom" title="Activities"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#awards"
+              ><i class="fa-solid fa-award" title="Awards"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#about"
+              ><i class="fa-solid fa-user" title="About Me"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#contact"
+              ><i class="fa-solid fa-address-card" title="Contact"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <section id="intro">
+        <h1>WELCOME TO MY PORTFOLIO</h1>
+        <p>
+          I AM A TECH ANTHUSIAST, 
+          <br />
+          THOURGH THIS SPACE I MADE, YOU ARE GONNA BE ABLE TO CONNECT WITH ME 
+          <br/>
+          GET TO KNOW WHO I AM
+          <br />
+          THOURGH MY PASSIONS, PROJECTS, AND DIVERSE TALENTS
+          
+        </p>
+      </section>
+
+      <section id="code">
+        <div class="code-Intro">
+          <h2>EXPLORE MY TECH JOURNEY </h2>
+          <p>
+           <!-- Here are some of the projects I have worked on, notably with HTML,
+            CSS and Python. Currently working on and getting familiar with
+            JavaScript. Take a look and see for yourself the code used and
+            rendered outcome.-->
+
+            Below are several projects that i worked on, primarily used HTMl, CSS, JavaScript and some c++. 
+            <br/>
+            I have also worked on some electonics projects using Arduino and Raspberry pi. 
+            Feel free to explore the code and the resulting output
+          </p>
+        </div>
+        <div class="code-Content">
+          <div class="content-Box">
+            <img
+              src="./images/Web capture_.jpeg"
+              alt="Template website picture"
+            />
+            <h4>Template Website</h4>
+            <p>
+              This is a complete template website designed for an interior
+              design business wishing to open up to the world and showcase its
+              work.The project is entirely developed in HTML & CSS and is
+              designed and organized to maximize flexibility and allow a person
+              with minimum technical knowledge to modify it to their taste.
+            </p>
+            <div>
+              <a href="https://github.com/b-wens-kedar/Decor.Co">View Code</a>
+              <a href="https://b-wens-kedar.github.io/Decor.Co/"
+                >View Project</a
+              >
+            </div>
+          </div>
+          <div class="content-Box">
+            <img src="./images/youtube_clone.jpeg" alt="youtube clone image" />
+            <h4>YouTube Replica</h4>
+            <p>
+              As the name indicates, this is a replica website of the youtube
+              homepage. One of my early endeavors which was meant to help me
+              familiarize with HTML & CSS. It relies mostly on grid display to
+              facilitate its responsiveness.
+            </p>
+            <div>
+              <a href="https://github.com/b-wens-kedar/YouTube-Clone"
+                >View Code</a
+              >
+              <a href="https://b-wens-kedar.github.io/YouTube-Clone/"
+                >View Project</a
+              >
+            </div>
+          </div>
+          <div class="content-Box">
+            <img
+              src="./images/translator.png"
+              alt="abbreviation translator code image"
+            />
+            <h4>Abbreviation Translator</h4>
+            <p>
+              Developed in python this is a simple abbreviation translator which
+              provides the full form of most if not all commonly used
+              abbreviations. It runs in a terminal as I decided not to compile
+              it into an executable file to minimize its resource usage.
+            </p>
+            <div>
+              <a
+                href="https://github.com/b-wens-kedar/Python-Projects/blob/main/Abbreviation-Translator/Translator.py"
+                >View Code</a
+              >
+              <a
+                href="https://replit.com/@barambonawens/Abbreviation-Translator"
+                >Try It</a
+              >
+            </div>
+          </div>
+          <div class="content-Box">
+            <img
+              src="./images/blackJackGame.png"
+              alt="blackJackGame code image"
+            />
+            <h4>Blackjack Game</h4>
+            <p>
+              This is a traditional blackjack game I developed using Python. It
+              is a one player against the dealer version of the classic, which
+              runs in a terminal. After hitting the run button the user is asked
+              how many games they want to play and the game begins.
+            </p>
+            <div>
+              <a
+                href="https://github.com/b-wens-kedar/Python-Projects/blob/main/Black-Jack-Game/main.py"
+                >View Code</a
+              >
+              <a href="https://replit.com/@barambonawens/BlackJackGame"
+                >Try It</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="activities">
+        <div class="activities-Intro">
+          <h2>Activities</h2>
+          <p>
+            Let's get away from the four-walled classroom setting to better
+            understand what motivates me to get out of bed with a little bit of
+            insight on who I am through some of the activities I enjoy and which
+            have shaped part of who I am today.
+          </p>
+        </div>
+        <div class="activities-Content">
+          <div class="activities-left">
+            <div
+              id="activities-Splide"
+              class="splide"
+              aria-labelledby="carousel-heading"
+            >
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <img src="./images/nacham1.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="./images/nacham2.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="./images/nacham3.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="./images/nacham4.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="./images/nacham5.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="./images/volunteer.jpeg" alt="" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="volunteering">
+              <p>
+                During the summer, I usually volunteer at Nacham Africa, a
+                non-governmental organization that cares for the uncared for in
+                public hospitals, through various programs such as providing
+                them with food, soap, and other life necessities, entertaining
+                children in designated areas to allow hospitalized parents to
+                rest, interacting with the patients for morale, and assisting
+                them in reintegrating the society by equipping them with skills
+                such as sewing knowledge. Volunteering at Nacham Africa is an
+                enriching experience as It brings to me a different perspective
+                of life, one through the eyes of the most destitute. It has
+                taught me to always be humble, grateful, and most importantly,
+                compassionate.
+              </p>
+            </div>
+          </div>
+          <div class="activities-right">
+            <div>
+              <img src="./images/leschampions.jpg" alt="" />
+              <h4>Club les champions</h4>
+              <p>
+                Previously known as Génies en herbe it organizes team-based
+                competition where students represent their secondary schools.
+                It's a trivia-style contest that covers a wide range of topics,
+                allowing students to showcase their knowledge and learn new
+                things. The image depicts the intense 2022-2023 finals that
+                opposed Gitega International Academy to l'École d'excellence de
+                Musinzira
+              </p>
+            </div>
+            <div>
+              <img src="./images/ushering.jpg" alt="" />
+              <h4>Ushering Team</h4>
+              <p>
+                Our role was to maintain order during school Sunday services as
+                well as other school events and ensure the well disposition of
+                chairs and overall cleanliness of our multipurpose main hall
+                before the arrival and after the departure of students and
+                guests
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="awards">
+        <div class="awards-Intro">
+          <h2>Awards</h2>
+          <p>
+            Barambona Wens Kedar on paper, get to know me through what I have
+            been recognized for. It might not depict all aspects of my
+            personality but It will give you a holistic view of my high-school
+            accomplishments.
+          </p>
+        </div>
+
+        <div
+          id="awards-Splide"
+          class="splide"
+          aria-labelledby="carousel-heading"
+        >
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img src="./images/medal.jpg" alt="" />
+                <div>
+                  <p>
+                    Medal awarded to me by Strathmore University, Kenya, for
+                    emerging as the winner of their mathematics contest
+                  </p>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <img src="./images/medal2.jpg" alt="" />
+                <div>
+                  <p>
+                    A photograph capturing the moment I was awarded the medal.
+                    From left to right, the picture features my mother, a
+                    representative from Strathmore, myself in the center, a GIA
+                    legal representative, and the Head of School on the far
+                    right.
+                  </p>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <img src="./images/certificate3.jpeg" alt="" />
+                <div>
+                  <p>
+                    Certificate of service for serving as Education minister
+                    during the 2022-2023 academic year.
+                  </p>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <img src="./images/certificate2.jpeg" alt="" />
+                <div>
+                  <p>
+                    Certificate of recognition for emerging the overall best
+                    achiever in the first semester of my 11th grade during the
+                    2021-2022 academic year.
+                  </p>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <img src="./images/certificate5.jpeg" alt="" />
+                <div>
+                  <p>
+                    Certificate of recognition for emerging the most disciplined
+                    student on campus during the 2021-2022 academic year
+                  </p>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <img src="./images/certificate6.jpeg" alt="" />
+                <div>
+                  <p>
+                    Certificate of recognition for the outstanding contribution
+                    to the GIA “les Champions” team in the 2020-2021 edition of
+                    the tournament.
+                  </p>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <img src="./images/certificate1.jpeg" alt="" />
+                <div>
+                  <p>
+                    Certificate of service for serving as assistant class
+                    monitor of grade 10 during the 2020-2021 academic year.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          I am a patient and hardworking person,fascinated by the operation of
+          computers and programs. I recently graduated from Gitega International
+          Academy, where I took science (physics) as my major. I've always had a
+          passion for technology and all the ways it can be leveraged, which led
+          me to individually learning and experiencing different programming
+          languages and technologies. I aspire to one day apply my skills and
+          knowledge in the digitization of Burundi and other developing areas so
+          as to create a more inclusive digital future.
+        </p>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <ul>
+        <li>
+          <a href="https://x.com/wens_kedar?"
+            ><i class="fa-brands fa-x-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://instagram.com/wens_kedar_?"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://github.com/b-wens-kedar"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </li>
+        <li>
+          <a href="mailto:wenskedar.ba@gmail.com"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+        </li>
+      </ul>
+      <div>
+        <a
+          class="footer-a"
+          href="https://github.com/b-wens-kedar/Portfolio-Website"
+          >View Portfolio Code</a
+        >
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/612a5a4c39.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
