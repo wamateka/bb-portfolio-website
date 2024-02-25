@@ -670,12 +670,7 @@ nav,
   position: fixed;
   left: 0;
   z-index: 2;
-  background: #2d142c;
-  background: linear-gradient(
-    90deg,
-    #510a32,
-    #c72c41,
-  );
+  background: linear-gradient(180deg,#510a32,#801336);
 }
 
 nav ul {
@@ -794,9 +789,9 @@ section {
 .content-Box span{
   position: absolute;
   width: 100%;
-  height: 0;
-  background: linear-gradient(to top,#801336,#ee4540,rgba(255, 255, 255, 0.3));
-  transition: height 0.5s;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  transition: background 2s;
 
 }
 .content-Box h4 {
@@ -865,7 +860,7 @@ section {
   background-position: right;
 }
 .content-Box:hover span{
-  height: 100%;
+  background: linear-gradient(to top,#801336,#ee4540,rgba(255, 255, 255, 0.3));
  
 }
 @media screen and (max-width: 600px) {
