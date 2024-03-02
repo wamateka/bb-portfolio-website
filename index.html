@@ -1,174 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
-    />
-    <link rel="stylesheet" href="styles.css" />
 
-    <title>Portfolio Website</title>
-  </head>
-  <body>
-    <div class="pseudo-Nav"><a href="index.html">Barry Barnes</a></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
 
-    <nav>
-      <div>
-        <ul>
-          <li>
-            <a href="#intro"><i class="fa-solid fa-house" title="Intro"></i></a>
-          </li>
-          <li>
-            <a href="#code"><i class="fa-solid fa-code" title="Code"></i></a>
-          </li>
-          <li>
-            <a href="#activities"
-              ><i class="fa-solid fa-atom" title="Activities"></i
-            ></a>
-          </li>
-          <li>
-            <a href="#awards"
-              ><i class="fa-solid fa-award" title="Awards"></i
-            ></a>
-          </li>
-          <li>
-            <a href="#about"
-              ><i class="fa-solid fa-user" title="About Me"></i
-            ></a>
-          </li>
-          <li>
-            <a href="#contact"
-              ><i class="fa-solid fa-address-card" title="Contact"></i
-            ></a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+  <link rel="stylesheet" href="styles.css" />
 
-    <main>
-      <section id="intro">
-        <h1>WELCOME TO MY PORTFOLIO</h1>
+  <title>Portfolio Website</title>
+</head>
+
+<body>
+  <div class="pseudo-Nav"><a href="index.html">Barry Barnes</a></div>
+
+  <nav>
+    <div>
+      <ul>
+        <li>
+          <a href="#intro"><i class="fa-solid fa-house" title="Intro"></i></a>
+        </li>
+        <li>
+          <a href="#code"><i class="fa-solid fa-code" title="Code"></i></a>
+        </li>
+        <li>
+          <a href="#activities"><i class="fa-solid fa-atom" title="Activities"></i></a>
+        </li>
+        <li>
+          <a href="#awards"><i class="fa-solid fa-award" title="Awards"></i></a>
+        </li>
+        <li>
+          <a href="#about"><i class="fa-solid fa-user" title="About Me"></i></a>
+        </li>
+        <li>
+          <a href="#contact"><i class="fa-solid fa-address-card" title="Contact"></i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section id="intro">
+      <h1>WELCOME TO MY PORTFOLIO</h1>
+      <p>
+        I AM A TECH ANTHUSIAST,
+        <br />
+        THOURGH THIS SPACE I MADE, YOU ARE GONNA BE ABLE TO CONNECT WITH ME
+        <br />
+        GET TO KNOW WHO I AM
+        <br />
+        THOURGH MY PASSIONS, PROJECTS, AND DIVERSE TALENTS
+      </p>
+    </section>
+
+    <section id="code">
+      <div class="code-Intro">
+        <h2>EXPLORE MY TECH JOURNEY</h2>
         <p>
-          I AM A TECH ANTHUSIAST, 
+          Below are several projects that i worked on, primarily used HTMl,
+          CSS, JavaScript and some c++ and PHP.
           <br />
-          THOURGH THIS SPACE I MADE, YOU ARE GONNA BE ABLE TO CONNECT WITH ME 
-          <br/>
-          GET TO KNOW WHO I AM
-          <br />
-          THOURGH MY PASSIONS, PROJECTS, AND DIVERSE TALENTS
-          
+          I have also worked on some electonics projects using Arduino and
+          Raspberry pi, To build simple Iot systems. Howevw. Feel free to explore the code and the resulting output
         </p>
-      </section>
-
-      <section id="code">
-        <div class="code-Intro">
-          <h2>EXPLORE MY TECH JOURNEY </h2>
+      </div>
+      <div class="code-Content">
+        <div class="content-Box">
+          <img src="./image/l&r.png" alt="Template website picture" />
+          <span></span>
+          <h4>Login and Registration</h4>
           <p>
-           <!-- Here are some of the projects I have worked on, notably with HTML,
-            CSS and Python. Currently working on and getting familiar with
-            JavaScript. Take a look and see for yourself the code used and
-            rendered outcome.-->
+            This a complete login and signup system that i built using PHP,
+            CSS, HTML and MySQL. It consist of a Registration form where users
+            enter their credentials and they recorded in a database. It also
+            has a Login form for registered users to signin. The forms have
+            validation and verifications rules to ensure data Integrity.
+          </p>
+          <div>
+            <a href="https://github.com/b-wens-kedar/Decor.Co">View Code</a>
+            <a href="https://b-wens-kedar.github.io/Decor.Co/">View Project</a>
+          </div>
+        </div>
+        <div class="content-Box">
+          <img src="./image/tdl.png" alt="youtube clone image" />
+          <span></span>
+          <h4>To Do list</h4>
+          <p>
+            A persistent To Do webApp that uses local storage to stores data
+            in form of objects. It allows the user to create task and organize
+            them as personal or busness related. When a task is done it can be
+            checked or removed from the list. tasks can also be editted.
+          </p>
+          <div>
+            <a href="https://github.com/b-wens-kedar/YouTube-Clone">View Code</a>
+            <a href="https://b-wens-kedar.github.io/YouTube-Clone/">View Project</a>
+          </div>
+        </div>
+        <div class="content-Box">
+          <img src="./image/billing.png" alt="abbreviation translator code image" />
+          <span></span>
+          <h4>Suppermarket billing system</h4>
+          <p>
+            Built using C++ language, this is a simple supermarket billing
+            system for handling simple transctions
+          </p>
+          <div>
+            <a href="https://github.com/b-wens-kedar/Python-Projects/blob/main/Abbreviation-Translator/Translator.py">View
+              Code</a>
+            <a href="https://replit.com/@barambonawens/Abbreviation-Translator">Try It</a>
+          </div>
+        </div>
+        <div class="content-Box">
+          <img src="./image/averageCalc.png" alt="avarage calculator image" />
+          <span></span>
+          <h4>average calculator</h4>
+          <p>
+            This is a traditional blackjack game I developed using Python. It
+            is a one player against the dealer version of the classic, which
+            runs in a terminal. After hitting the run button the user is asked
+            how many games they want to play and the game begins.
+          </p>
+          <div>
+            <a href="https://github.com/b-wens-kedar/Python-Projects/blob/main/Black-Jack-Game/main.py">View Code</a>
+            <a href="https://replit.com/@barambonawens/BlackJackGame">Try It</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            Below are several projects that i worked on, primarily used HTMl, CSS, JavaScript and some c++. 
-            <br/>
-            I have also worked on some electonics projects using Arduino and Raspberry pi. 
-            Feel free to explore the code and the resulting output
+    <section id="activities">
+      <div class="activities-Intro">
+        <h2>Activities</h2>
+        <p>
+          Let's get away from the four-walled classroom setting to better
+          understand what motivates me to get out of bed with a little bit of
+          insight on who I am through some of the activities I enjoy and which
+          have shaped part of who I am today.
+        </p>
+      </div>
+      <div class="activities-list">
+        <div class="activity1">
+          <img src="./image/mb2.jpg" alt="image of me listening to how our team leader explains what we do in our team">
+          <div>
+          <h3>Internship</h3>
+          <p>
+            Last summer, of 2023, i Interned At Mediabox, One of the best tech companies in Burundi, as part of a Work
+            experience Program at school. For 3 months, not only did i learn, but i was also able to apply the
+            different knowledge i had in different technologies. Strating the first month by producing
+            functional specification for different projects at Mediabox, in French, a language i did not master, allowed
+            me
+            to understand how projects are designed in big Enterprises. In the second Month, i delved into IoT's.
+            Finally
+            a more technical job for me. I was not really familiarised with electonics, but playing around with The
+            different IoT devices
+            broadened my knowledge on how this technologies can be used to make life better and more effecient. I
+            concivied a small security system
+            using ultrasonic sensor and Arduino, which were programed using c++. just to say a few. I ended the
+            Internship with A hands on experience on
+            a green-house automation project where i contributed in programming stepper motors to lift the plastic sheeting used to cover the 
+            green House to allow more air to get in during hot weather.
+            The image shows when we were in the control center testing the code with the person in charge of person(in black t shirt) in charge the green-house project.
+
           </p>
         </div>
-        <div class="code-Content">
-          <div class="content-Box">
-            <img
-              src="./image/l&r.png"
-              alt="Template website picture"
-            />
-            <span></span>
-            <h4>Login and Registration</h4>
-            <p>
-              This a complete login and signup system that i built using PHP, CSS, HTML and MySQL. 
-              It consist of a Registration form where users enter their credentials and they recorded in a database.
-              It also has a Login form for registered users to signin.
-              The forms have validation and verifications rules to ensure data Integrity.
-             
-            </p>
-            <div>
-              <a href="https://github.com/b-wens-kedar/Decor.Co">View Code</a>
-              <a href="https://b-wens-kedar.github.io/Decor.Co/"
-                >View Project</a
-              >
-            </div>
-          </div>
-          <div class="content-Box" >
-            <img src="./image/tdl.png" alt="youtube clone image"  />
-            <span></span>
-            <h4>To Do list</h4>
-            <p>
-              A persistent To Do webApp that uses local storage to stores data in form of objects.
-              It allowsthe user to create task and organize them as personal or busness related.
-              When a task i done it can be checked or removed from the list.
-              tasks can also be editted.
-            </p>
-            <div>
-              <a href="https://github.com/b-wens-kedar/YouTube-Clone"
-                >View Code</a
-              >
-              <a href="https://b-wens-kedar.github.io/YouTube-Clone/"
-                >View Project</a
-              >
-            </div>
-          </div>
-          <div class="content-Box">
-            <img
-              src="./images/translator.png"
-              alt="abbreviation translator code image"
-            />
-            <span></span>
-            <h4>Abbreviation Translator</h4>
-            <p>
-              Developed in python this is a simple abbreviation translator which
-              provides the full form of most if not all commonly used
-              abbreviations. It runs in a terminal as I decided not to compile
-              it into an executable file to minimize its resource usage.
-            </p>
-            <div>
-              <a
-                href="https://github.com/b-wens-kedar/Python-Projects/blob/main/Abbreviation-Translator/Translator.py"
-                >View Code</a
-              >
-              <a
-                href="https://replit.com/@barambonawens/Abbreviation-Translator"
-                >Try It</a
-              >
-            </div>
-          </div>
-          <div class="content-Box">
-            <img
-              src="./images/blackJackGame.png"
-              alt="blackJackGame code image"
-            />
-            <span></span>
-            <h4>Blackjack Game</h4>
-            <p>
-              This is a traditional blackjack game I developed using Python. It
-              is a one player against the dealer version of the classic, which
-              runs in a terminal. After hitting the run button the user is asked
-              how many games they want to play and the game begins.
-            </p>
-            <div>
-              <a
-                href="https://github.com/b-wens-kedar/Python-Projects/blob/main/Black-Jack-Game/main.py"
-                >View Code</a
-              >
-              <a href="https://replit.com/@barambonawens/BlackJackGame"
-                >Try It</a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <section id="activities">
+        </div>
+        <div class="activity2">
+          <img src="./image/football1.jpg"
+            alt="image of me listening to how our team leader explains what we do in our team">
+             <div>
+            <h3>Football</h3>
+          <p>
+            After school, on tuesdays and thursdays, there was no other destination than the green football field where
+            we trained for
+            interschools football competitions. I was playing as the Goalkeeper forThe King's school football team. This
+            Image depicts the day
+            when we were awarded the cup as <b>Winners</b> Of the <b>Youth Cup Burundi</b>. I am the second person from
+            the right.
+          </p>
+        </div>
+
+        </div>
+        <div class="activity3">
+          <img src="./image/Art.jpg" alt="image of a painting">
+          <div>
+          <h3>Art</h3>
+          <p>
+            Time for being creative. As part of the Art club at GIA, we played with brushes, colors and canvas.This Picture depicts a painting 
+            i drew in my free time in 2021. Inspired By the motherland, I drew a big tree that grew on the soil of my country, and born fruits 
+            that other citizens can in enjoy.           
+          </p>
+        </div>
+
+        </div>
+        <div class="activity4">
+          <img src="./image/d&d2.jpg"
+            alt="image of me listening to how our team leader explains what we do in our team">
+          <div>
+            <h3>Drama and Dance</h3>
+          <p>
+            I was also part of The drama and dance clud in GIA(Gitega International Academy).
+            We orchastrated different plays and dance choreographies at different occasions like The GIA day
+            (The day GIA was founded), MDD competition, chapel services. As a Christian school, everything was Christ
+            centered
+            and directed to send a message to the audiance. Here is a link to
+            <a href="https://fb.watch/nSlOw3jKDL/?mibextid=UXglBzUGR4uSUZqd"><b>a play by GIA students </b></a>
+            This Image shows The KKcrew(GIA dancing team)
+            <a href="https://web.facebook.com/GitegaInternationalAcademy/videos/834433013697566/">
+              <b>performing</b></a>
+            (50:00-1:07:10)at MDD competition, which we came second.
+            I am the 4th person from the left.
+
+
+          </p>
+        </div>
+
+        </div>
+
+
+      </div>
+      </div>
+      <!--
         <div class="activities-Intro">
           <h2>Activities</h2>
           <p>
@@ -184,6 +236,7 @@
               id="activities-Splide"
               class="splide"
               aria-labelledby="carousel-heading"
+              1
             >
               <div class="splide__track">
                 <ul class="splide__list">
@@ -252,152 +305,160 @@
             </div>
           </div>
         </div>
-      </section>
+        -->
+    </section>
 
-      <section id="awards">
-        <div class="awards-Intro">
-          <h2>Awards</h2>
-          <p>
-            Barambona Wens Kedar on paper, get to know me through what I have
-            been recognized for. It might not depict all aspects of my
-            personality but It will give you a holistic view of my high-school
-            accomplishments.
-          </p>
-        </div>
-
-        <div
-          id="awards-Splide"
-          class="splide"
-          aria-labelledby="carousel-heading"
-        >
-          <div class="splide__track">
-            <ul class="splide__list">
-              <li class="splide__slide">
-                <img src="./images/medal.jpg" alt="" />
-                <div>
-                  <p>
-                    Medal awarded to me by Strathmore University, Kenya, for
-                    emerging as the winner of their mathematics contest
-                  </p>
+    <section>
+      <Slider>
+        <div class="carousel">
+          <div class="carousel__body">
+            <div class="carousel__prev">
+              <i class="fa-solid fa-angle-left"></i>
+            </div>
+            <div class="carousel__next">
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+            <div class="carousel__slider">
+              <!-- Loop through items -->
+              <div class="carousel__slider__item">
+                <div class="item__3d-frame">
+                  <div class="item__3d-frame__box item__3d-frame__box--front">
+                    <img src="./image/mbc.jpg" alt="" />
+                  </div>
+                  <div class="item__3d-frame__box item__3d-frame__box--left"></div>
+                  <div class="item__3d-frame__box item__3d-frame__box--right"></div>
                 </div>
-              </li>
-              <li class="splide__slide">
-                <img src="./images/medal2.jpg" alt="" />
-                <div>
-                  <p>
-                    A photograph capturing the moment I was awarded the medal.
-                    From left to right, the picture features my mother, a
-                    representative from Strathmore, myself in the center, a GIA
-                    legal representative, and the Head of School on the far
-                    right.
-                  </p>
+              </div>
+              <!-- Repeat for each item -->
+              <div class="carousel__slider__item">
+                <div class="item__3d-frame">
+                  <div class="item__3d-frame__box item__3d-frame__box--front">
+                    <h1><img src="./image/yc1.jpg" alt="" /></h1>
+                  </div>
+                  <div class="item__3d-frame__box item__3d-frame__box--left"></div>
+                  <div class="item__3d-frame__box item__3d-frame__box--right"></div>
                 </div>
-              </li>
-              <li class="splide__slide">
-                <img src="./images/certificate3.jpeg" alt="" />
-                <div>
-                  <p>
-                    Certificate of service for serving as Education minister
-                    during the 2022-2023 academic year.
-                  </p>
+              </div>
+              <div class="carousel__slider__item">
+                <div class="item__3d-frame">
+                  <div class="item__3d-frame__box item__3d-frame__box--front">
+                    <h1><img src="./image/yc2.jpg" alt="" /></h1>
+                  </div>
+                  <div class="item__3d-frame__box item__3d-frame__box--left"></div>
+                  <div class="item__3d-frame__box item__3d-frame__box--right"></div>
                 </div>
-              </li>
-              <li class="splide__slide">
-                <img src="./images/certificate2.jpeg" alt="" />
-                <div>
-                  <p>
-                    Certificate of recognition for emerging the overall best
-                    achiever in the first semester of my 11th grade during the
-                    2021-2022 academic year.
-                  </p>
+              </div>
+              <div class="carousel__slider__item">
+                <div class="item__3d-frame">
+                  <div class="item__3d-frame__box item__3d-frame__box--front">
+                    <h1><img src="./image/d&d.jpg" alt="" /></h1>
+                  </div>
+                  <div class="item__3d-frame__box item__3d-frame__box--left"></div>
+                  <div class="item__3d-frame__box item__3d-frame__box--right"></div>
                 </div>
-              </li>
-              <li class="splide__slide">
-                <img src="./images/certificate5.jpeg" alt="" />
-                <div>
-                  <p>
-                    Certificate of recognition for emerging the most disciplined
-                    student on campus during the 2021-2022 academic year
-                  </p>
+              </div>
+              <div class="carousel__slider__item">
+                <div class="item__3d-frame">
+                  <div class="item__3d-frame__box item__3d-frame__box--front">
+                    <h1><img src="./image/IGCSE.jpg" alt="" /></h1>
+                  </div>
+                  <div class="item__3d-frame__box item__3d-frame__box--left"></div>
+                  <div class="item__3d-frame__box item__3d-frame__box--right"></div>
                 </div>
-              </li>
-              <li class="splide__slide">
-                <img src="./images/certificate6.jpeg" alt="" />
-                <div>
-                  <p>
-                    Certificate of recognition for the outstanding contribution
-                    to the GIA “les Champions” team in the 2020-2021 edition of
-                    the tournament.
-                  </p>
+              </div>
+              <div class="carousel__slider__item">
+                <div class="item__3d-frame">
+                  <div class="item__3d-frame__box item__3d-frame__box--front">
+                    <h1><img src="./image/IGCSE-math.jpg" alt="" /></h1>
+                  </div>
+                  <div class="item__3d-frame__box item__3d-frame__box--left"></div>
+                  <div class="item__3d-frame__box item__3d-frame__box--right"></div>
                 </div>
-              </li>
-              <li class="splide__slide">
-                <img src="./images/certificate1.jpeg" alt="" />
-                <div>
-                  <p>
-                    Certificate of service for serving as assistant class
-                    monitor of grade 10 during the 2020-2021 academic year.
-                  </p>
+              </div>
+              <!-- Repeat for each item -->
+              <!-- ... -->
+              <div class="carousel__slider__item">
+                <div class="item__3d-frame">
+                  <div class="item__3d-frame__box item__3d-frame__box--front">
+                    <h1><img src="./image/IGCSE-chem.jpg" alt="" /></h1>
+                  </div>
+                  <div class="item__3d-frame__box item__3d-frame__box--left"></div>
+                  <div class="item__3d-frame__box item__3d-frame__box--right"></div>
                 </div>
-              </li>
-            </ul>
+              </div>
+              <div class="carousel__slider__item">
+                <div class="item__3d-frame">
+                  <div class="item__3d-frame__box item__3d-frame__box--front">
+                    <h1><img src="./image/IGCSE-physics.jpg" alt="" /></h1>
+                  </div>
+                  <div class="item__3d-frame__box item__3d-frame__box--left"></div>
+                  <div class="item__3d-frame__box item__3d-frame__box--right"></div>
+                </div>
+              </div>
+              <div class="carousel__slider__item">
+                <div class="item__3d-frame">
+                  <div class="item__3d-frame__box item__3d-frame__box--front">
+                    <img src="./image/physics-ial.jpg" alt="" />
+                  </div>
+                  <div class="item__3d-frame__box item__3d-frame__box--left"></div>
+                  <div class="item__3d-frame__box item__3d-frame__box--right"></div>
+                </div>
+              </div>
+              <div class="carousel__slider__item">
+                <div class="item__3d-frame">
+                  <div class="item__3d-frame__box item__3d-frame__box--front">
+                    <img src="./image/IAL-it.jpg" alt="" />
+                  </div>
+                  <div class="item__3d-frame__box item__3d-frame__box--left"></div>
+                  <div class="item__3d-frame__box item__3d-frame__box--right"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
+      </Slider>
+    </section>
 
-      <section id="about">
-        <h2>About Me</h2>
-        <p>
-          I am a patient and hardworking person,fascinated by the operation of
-          computers and programs. I recently graduated from Gitega International
-          Academy, where I took science (physics) as my major. I've always had a
-          passion for technology and all the ways it can be leveraged, which led
-          me to individually learning and experiencing different programming
-          languages and technologies. I aspire to one day apply my skills and
-          knowledge in the digitization of Burundi and other developing areas so
-          as to create a more inclusive digital future.
-        </p>
-      </section>
-    </main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a patient and hardworking person,fascinated by the operation of
+        computers and programs. I recently graduated from Gitega International
+        Academy, where I took science (physics) as my major. I've always had a
+        passion for technology and all the ways it can be leveraged, which led
+        me to individually learning and experiencing different programming
+        languages and technologies. I aspire to one day apply my skills and
+        knowledge in the digitization of Burundi and other developing areas so
+        as to create a more inclusive digital future.
+      </p>
+    </section>
+  </main>
 
-    <footer id="contact">
-      <ul>
-        <li>
-          <a href="https://x.com/wens_kedar?"
-            ><i class="fa-brands fa-x-twitter"></i
-          ></a>
-        </li>
-        <li>
-          <a href="https://instagram.com/wens_kedar_?"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
-        </li>
-        <li>
-          <a href="https://github.com/b-wens-kedar"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-        </li>
-        <li>
-          <a href="mailto:wenskedar.ba@gmail.com"
-            ><i class="fa-solid fa-envelope"></i
-          ></a>
-        </li>
-      </ul>
-      <div>
-        <a
-          class="footer-a"
-          href="https://github.com/b-wens-kedar/Portfolio-Website"
-          >View Portfolio Code</a
-        >
-      </div>
-    </footer>
+  <footer id="contact">
+    <ul>
+      <li>
+        <a href="https://twitter.com/niyobarry"><i class="fa-brands fa-x-twitter"></i></a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/n_b.a.r.n.e.s_/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+      </li>
+      <li>
+        <a href="https://github.com/wamateka"><i class="fa-brands fa-github"></i></a>
+      </li>
+      <li>
+        <a href="mailto:barrybarnes257@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      </li>
+    </ul>
+    <div>
+      <a class="footer-a" href="https://github.com/wamateka/bb-portfolio-website">View Portfolio Code</a>
+    </div>
+  </footer>
 
-    <script
-      src="https://kit.fontawesome.com/612a5a4c39.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
-    <script src="script.js"></script>
-  </body>
+  <script src="https://kit.fontawesome.com/612a5a4c39.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>

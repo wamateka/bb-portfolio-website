@@ -648,7 +648,8 @@ p {
 
 * {
   color: rgb(225, 225, 225, 0.85);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 nav,
@@ -670,7 +671,7 @@ nav,
   position: fixed;
   left: 0;
   z-index: 2;
-  background: linear-gradient(180deg,#510a32,#801336);
+  background: linear-gradient(180deg, #510a32, #801336);
 }
 
 nav ul {
@@ -709,7 +710,7 @@ main {
     #801336,
     #ee4540,
     #510a32,
-    #ee4540,
+    #ee4540
   );
 }
 
@@ -718,9 +719,21 @@ section {
   flex-direction: column;
   padding: 18vh 0;
 }
-
+#intro::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./image/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(2px); /* Adjust the blur radius as needed */
+  z-index: -1; /* Ensure the pseudo-element is behind other content */
+}
 #intro {
-  background-image: url(./images/layered-waves-haikei.png);
+  background-image: url(./image/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -731,13 +744,16 @@ section {
   letter-spacing: calc(var(--vspace-0_125) * 0.8);
   position: relative;
   z-index: 3;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 #intro h1 {
+  color: #2d142c;
   font-size: var(--text-xl);
 }
 
 #intro p {
+  color: #510a32;
   margin-top: 2rem;
   line-height: var(--vspace-0_875);
 }
@@ -765,9 +781,8 @@ section {
   gap: var(--vspace-0_875);
   padding: 0 2.5vw;
 }
-
 .content-Box {
-  background-color: #2D142C;
+  background-color: #2d142c;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -786,13 +801,12 @@ section {
   transition: opacity 500ms, transform 500ms;
   object-fit: cover;
 }
-.content-Box span{
+.content-Box span {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   transition: background 2s;
-
 }
 .content-Box h4 {
   position: absolute;
@@ -818,13 +832,7 @@ section {
 }
 
 .content-Box div a {
-  background: linear-gradient(
-    90deg,
-    #c72c41,
-    #510a32,
-    #ee4540
-  
-  );
+  background: linear-gradient(90deg, #c72c41, #510a32, #ee4540);
   background-size: 230%;
   background-position: left;
   padding: 2vh 1vw;
@@ -859,9 +867,13 @@ section {
 .content-Box div a:hover {
   background-position: right;
 }
-.content-Box:hover span{
-  background: linear-gradient(to top,#801336,#ee4540,rgba(255, 255, 255, 0.3));
- 
+.content-Box:hover span {
+  background: linear-gradient(
+    to top,
+    #801336,
+    #ee4540,
+    rgba(255, 255, 255, 0.3)
+  );
 }
 @media screen and (max-width: 600px) {
   .code-Content {
@@ -874,7 +886,34 @@ section {
     padding: 2vh 2vw;
   }
 }
+#activities{
+  padding: 20px;
+}
+.activities-list{
+  display: flex;
+  flex-direction: column;
+}
 
+.activities-list img{
+  width: 50%;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+.activities-list .activity1,
+.activities-list .activity3{
+  display: flex;
+  flex-direction: row;
+  margin: 40px;
+
+}
+.activities-list .activity2,
+.activities-list .activity4{
+  display: flex;
+  flex-direction: row-reverse;
+
+}
+
+/**/
 .activities-Content {
   display: grid;
   grid-template-columns: 49% 48.5%;
@@ -1092,4 +1131,121 @@ footer ul li a i:hover {
 
 .footer-a:hover {
   background-position: right;
+}
+
+
+/*design for sliders*/
+.carousel {
+  width: 100%;
+  position: relative;
+  display: block;
+  height: 400px;
+}
+
+.carousel__body {
+  position: relative;
+  width: 100%;
+  
+  height: 100%;
+  padding: 35px;
+  overflow: hidden;
+}
+.carousel__prev,
+.carousel__next {
+  position: absolute;
+  bottom: 3%;
+  transition: transform 0.25s ease;
+  z-index: 3;
+}
+.carousel i {
+  font-size: 60px;
+  color: var(--box-border);
+  cursor: pointer;
+}
+
+.carousel__prev:hover,
+.carousel__next:hover {
+  transform: scale(1.25);
+}
+
+.carousel__prev {
+  left: 40%;
+}
+.carousel__next {
+  right: 32%;
+}
+
+.carousel__slider {
+  transition: transform 0.5s ease;
+}
+
+.carousel__slider__item {
+  position: relative;
+  display: block;
+  float: left;
+  box-sizing: border-box;
+  width: 400px;
+  margin-left: 10px;
+  margin-right: 20px;
+  box-sizing: border-box;
+}
+.carousel__slider__item p{
+  position: absolute;
+  top: 40%;
+
+
+}
+.carousel__slider__item .item__3d-frame {
+  position: relative;
+  perspective: 1000px;
+  width: 150%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.item__3d-frame:after {
+  content: "";
+  position: absolute;
+  bottom: -15%;
+  width: 100%;
+  height: 40px;
+  background: var(--box-shadow);
+  box-shadow: 0px 0px 5px 5px var(--box-shadow);
+  transform: rotateX(90deg) translate3d(0px, -20px, 0px);
+  opacity: 0.85;
+}
+.item__3d-frame__box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+
+}
+
+.item__3d-frame__box--front {
+  transform: translateZ(0);
+}
+
+.item__3d-frame__box--left {
+  top: 0;
+  left: 0;
+  border-left-width: 5px;
+  width: 40px;
+  backface-visibility: hidden;
+  transform: translate3d(1px, 0, -40px) rotateY(-90deg);
+  transform-origin: 0%;
+}
+
+.item__3d-frame__box--right {
+  top: 0;
+  right: 0;
+  width: 40px;
+  border-right-width: 5px;
+  backface-visibility: hidden;
+  transform: translate3d(1px, 0, -40px) rotateY(90deg);
+  transform-origin: 100%;
 }
