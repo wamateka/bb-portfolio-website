@@ -913,6 +913,54 @@ section {
 
 }
 
+
+/*manual slide*/
+.activity-container1{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+.activity-container2{
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+
+
+.imageslide{
+  position: relative;
+  width: 46%;
+  height: 500px;
+  margin-right: 20px;
+
+}
+.imageslide img{
+ 
+  width: 100%;
+  height: 500px;
+}
+.mySlides, .mySlides2, .mySlides3 {
+  display: none;
+}
+
+
+.activity-container1 .description{
+  width: 46%;
+  font-size: var(--text-size);
+  line-height: var(--vspace-0_75);
+
+}
+.activity-container2 .description{
+  width: 46%;
+  font-size: var(--text-size);
+  line-height: var(--vspace-0_75);
+
+}
+
 /**/
 .activities-Content {
   display: grid;
@@ -1152,6 +1200,7 @@ footer ul li a i:hover {
 }
 .carousel__prev,
 .carousel__next {
+  background-color: #2d142c6c;
   position: absolute;
   bottom: 3%;
   transition: transform 0.25s ease;

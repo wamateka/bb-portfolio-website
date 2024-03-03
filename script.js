@@ -81,4 +81,40 @@
   init();
   
 })();
+//manual slides
+//--------------------------
+var slideIndex = 1;
+showDivs(slideIndex);
 
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+var slide2Index = 1;
+showDivs2(slide2Index);
+
+function plusDivs2(s) {
+  showDivs2(slide2Index += s);
+}
+
+function showDivs2(s) {
+  var j;
+  var y = document.getElementsByClassName("mySlides2");
+  if (s > y.length) {slide2Index = 1}
+  if (s < 1) {slide2Index = y.length}
+  for (j = 0; j < y.length; j++) {
+    y[j].style.display = "none";  
+  }
+  y[slide2Index-1].style.display = "block";  
+}
