@@ -118,3 +118,9 @@ function showDivs2(s) {
   }
   y[slide2Index-1].style.display = "block";  
 }
+window.addEventListener('load', function() {
+  var links = document.querySelectorAll('.external-link');
+  links.forEach(function(link) {
+    link.setAttribute('target', '_blank');
+  });
+})
